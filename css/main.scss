@@ -1,0 +1,67 @@
+@import './config';
+@import './home';
+@import './menu';
+@import './about';
+@import './contact';
+@import './projects';
+@import './responsive';
+
+body{
+
+    background:$primary-color;
+    color:white;
+    height:100vh;
+    font-family:sans-serif;
+    line-height: 1;
+
+}
+
+h1,h2,h3{
+    font-weight:400;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    padding:1rem;
+    width:100%
+}
+
+main{
+    height:100%;
+    width:100%;
+
+    .social__icons
+    {
+        position:fixed;
+        bottom:1rem;
+        left:1rem;
+        a{
+            padding:0.4rem;
+            @include transition-ease;
+            &:hover{
+
+                color:$secondary-color;
+            }
+    }
+}
+}
+
+footer{
+    font-size:1rem;
+    position:fixed;
+    text-align:right;
+    color:white;
+    bottom:0.8rem;
+    right:0;
+}
+.text-secondary
+{
+    color:$secondary-color;
+    margin-top: 0.5rem;
+}
